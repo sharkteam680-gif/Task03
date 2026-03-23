@@ -6,7 +6,7 @@ import java.awt.*;
 
 
 public class gridlayout {
-    JFrame BorderFrame;
+    JFrame borderframe;
     JPanel jpanelone;
     JPanel jpaneltwo;
     JPanel jpanelthree;
@@ -16,16 +16,16 @@ public class gridlayout {
     }
     public void createjframeborderlayout(){
         JFrame.setDefaultLookAndFeelDecorated(true);
-        BorderFrame = new JFrame ("gridlayout");
-        BorderFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        BorderFrame.setExtendedState(Frame.MAXIMIZED_BOTH);
-        BorderFrame.setLayout(new GridLayout(1,3));
+        borderframe = new JFrame ("gridlayout");
+        borderframe.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        borderframe.setExtendedState(Frame.MAXIMIZED_BOTH);
+        borderframe.setLayout(new GridLayout(1,3));
 
-        BorderFrame.add(this.createjpanelone());
-        BorderFrame.add(this.createjpaneltwo());
-        BorderFrame.add(this.createjpanelthree());
+        borderframe.add(this.createjpanelone());
+        borderframe.add(this.createjpaneltwo());
+        borderframe.add(this.createjpanelthree());
 
-        BorderFrame.setVisible(true);
+        borderframe.setVisible(true);
     }
     public JPanel createjpanelone(){
         jpanelone = new JPanel();
