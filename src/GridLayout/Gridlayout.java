@@ -1,52 +1,52 @@
-package GridLayout;
+package gridlayout;
 
 import javax.swing.*;
 import javax. swing. border. Border;
 import java.awt.*;
 
 
-public class Gridlayout {
+public class gridlayout {
     JFrame BorderFrame;
-    JPanel JPanelOne;
-    JPanel JPanelTwo;
-    JPanel JPanelThree;
+    JPanel jpanelone;
+    JPanel jpaneltwo;
+    JPanel jpanelthree;
 
-    public Gridlayout(){
-        this.CreateJFrameBorderLayout();
+    public gridlayout(){
+        this.createjframeborderlayout();
     }
-    public void CreateJFrameBorderLayout(){
+    public void createjframeborderlayout(){
         JFrame.setDefaultLookAndFeelDecorated(true);
-        BorderFrame = new JFrame ("GridLayout");
-        BorderFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        BorderFrame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        BorderFrame = new JFrame ("gridlayout");
+        BorderFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        BorderFrame.setExtendedState(Frame.MAXIMIZED_BOTH);
         BorderFrame.setLayout(new GridLayout(1,3));
 
-        BorderFrame.add(this.CreateJPanelOne());
-        BorderFrame.add(this.CreateJPanelTwo());
-        BorderFrame.add(this.CreateJPanelThree());
+        BorderFrame.add(this.createjpanelone());
+        BorderFrame.add(this.createjpaneltwo());
+        BorderFrame.add(this.createjpanelthree());
 
         BorderFrame.setVisible(true);
     }
-    public JPanel CreateJPanelOne(){
-        JPanelOne = new JPanel();
-        Border JPanelOneBorder =BorderFactory.createTitledBorder("JPanelOne");
-        JPanelOne.setBorder(JPanelOneBorder);
-        JPanelOne.setBackground(Color.cyan);
-        return JPanelOne;
+    public JPanel createjpanelone(){
+        jpanelone = new JPanel();
+        Border jpaneloneborder =BorderFactory.createTitledBorder("JPanelOne");
+        jpanelone.setBorder(jpaneloneborder);
+        jpanelone.setBackground(Color.cyan);
+        return jpanelone;
     }
-    public JPanel CreateJPanelTwo() {
-        JPanelTwo = new JPanel();
-        Border JPanelTwoBorder = BorderFactory.createTitledBorder("JPanelTwo");
-        JPanelTwo.setBorder(JPanelTwoBorder);
-        JPanelTwo.setBackground(Color.darkGray);
-        return JPanelTwo;
+    public JPanel createjpaneltwo() {
+        jpaneltwo = new JPanel();
+        Border jpaneltwoborder = BorderFactory.createTitledBorder("JPanelTwo");
+        jpaneltwo.setBorder(jpaneltwoborder);
+        jpaneltwo.setBackground(Color.darkGray);
+        return jpaneltwo;
     }
-    public JPanel CreateJPanelThree() {
-        JPanelThree = new JPanel();
-        Border JPanelThreeBorder = BorderFactory.createTitledBorder("JPanelThree");
-        JPanelThree.setBorder(JPanelThreeBorder);
-        JPanelThree.setBackground(Color.gray);
-        return JPanelThree;
+    public JPanel createjpanelthree() {
+        jpanelthree = new JPanel();
+        Border jpanelthreeborder = BorderFactory.createTitledBorder("JPanelThree");
+        jpanelthree.setBorder(jpanelthreeborder);
+        jpanelthree.setBackground(Color.gray);
+        return jpanelthree;
     }
 
 }

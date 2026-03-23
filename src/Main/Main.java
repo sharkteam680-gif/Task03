@@ -1,10 +1,10 @@
-package Main;
+package main;
 
 
-import GridLayout.Gridlayout;
+import gridlayout.gridlayout;
 
-public class Main{
+public class main {
     public static void main(String[] args) {
-        new Gridlayout();
+        new gridlayout();
     }
 }
